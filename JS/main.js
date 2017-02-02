@@ -4,7 +4,7 @@ var email = $('#email').val();
 var valid = isValidEmailAddress(email);
 if (email != ' '){
     if(valid == true ){
-        alert("Thank you for subscribing"); 
+        alert("Thank you for subscribing");
     }
     else{
         alert("Invalid email");
@@ -32,10 +32,10 @@ function isValidEmailAddress(emailAddress) {
    prevNexButtons: false
 });
 function scrollNav() {
-  $('.navBar a').click(function(){  
+  $('.navBar a').click(function(){
     //Toggle Class
     //debugger;
-    $(".active").removeClass("active");      
+    $(".active").removeClass("active");
     $(this).closest('li').addClass("active");
     var theClass = $(this).attr("class");
     $('.'+theClass).parent('li').addClass('active');
@@ -48,3 +48,9 @@ function scrollNav() {
   $('.scrollTop a').scrollTop();
 }
 scrollNav();
+
+$(function() {
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
+});
