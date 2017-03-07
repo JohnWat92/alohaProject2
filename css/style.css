@@ -133,6 +133,7 @@ nav ul{
 }
 nav li{
   display:inline-flex;
+  font-family:'Raleway Display Web';
   line-height: 1rem;
   justify-content: center;
   padding:.75rem;
@@ -161,7 +162,7 @@ a:hover {
    color: #b64036;
 }
 h2{
-  font-family: 'Playfair Display Web';
+  font-family:'Playfair Display Web';
   font-style:italic;
   font-weight:normal;
   font-size:2.3rem;
@@ -178,22 +179,21 @@ h4{
   color:grey;
 }
 .aboveSeason{
-    font-family: 'Playfair Display Web';
+    font-family:'Playfair Display Web';
     font-weight: normal;
     margin:0 auto;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
 }
 .season h2{
-    font-family: 'Playfair Display Web';
+    font-family:'Playfair Display Web';
     font-style:normal;
     font-weight:normal;
-    font-size: 2.5rem;
+    font-size:2.5rem;
     text-align: center;
     margin: 0 auto;
     text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
 }
-
 .hero {
   display:flex;
   flex-direction:column;
@@ -202,7 +202,7 @@ h4{
   font-weight: lighter;
   justify-content: center;
   align-items: center;
-  font-family:"playfair_displayregular";
+  font-family:"Playfair Display Web";
   text-align: center;
   margin-top: 9rem;
   background: 
@@ -229,6 +229,10 @@ h4{
   flex-flow:row wrap;
   box-sizing: border-box;
 }
+.wrapper.mens:hover, .wrapper.trends:hover, .wrapper.glasses:hover, .wrapper.sale:hover, .wrapper.bags:hover, .wrapper.womens:hover{
+    background-image:none;
+    /*opacity:.8;*/
+  }
 
 .wide img{
   width:100%;
@@ -257,6 +261,7 @@ background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 10
 display:flex;
 justify-content:center;
 align-items:center;
+transition: all 0.45s;
 }
 .categoryText{
   position:absolute;
@@ -286,12 +291,25 @@ align-items:center;
   color:#969696;
   font-family: 'Raleway Display Web';
   font-size:.75rem;
+  font-weight:bold;
   text-transform: uppercase;
 }
+.updates h2{
+  margin-bottom:1rem;
+}
+.updatesContainer{
+  width:600px;
+  text-align:center;
+}
 .updates {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   font-family: "Raleway Display Web";
   text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
   text-align: center;
+  height:20rem;
   line-height:2em;
   margin: 0 auto;
   color:white;
@@ -307,8 +325,8 @@ align-items:center;
   width: 80%;
 }
 input[type="email"]{
-  padding: 1.15rem .2rem;
-  width:100%;
+  padding: 1.15rem 1rem;
+  width:490px;
   border-radius: 3rem;
   position:relative;
 }
@@ -320,6 +338,7 @@ position:absolute;
 padding-bottom: 1.3rem;
 border:solid;
 border-radius: 3rem;
+box-shadow:none !important;
 right: -.4rem;
 top: .2rem;
 width: 100px;
@@ -335,13 +354,14 @@ input{
 }
 
 input:focus {
-  box-shadow: 10px 10px 10px;
+  /*box-shadow: 10px 10px 10px;*/
   border-radius:15px;
 }
 footer {
   background-color: #242424;
   text-align: center;
   display:flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -356,6 +376,7 @@ footer {
 }
 .socialMedia li{
   list-style:none;
+  font-family:"Raleway Display Web";
   display: inline-flex;
   justify-content: center;
   margin:0 auto;
@@ -380,7 +401,7 @@ footer {
   width:auto;
 }
 .navWrap{
-  height: 5.125rem;
+  height: 6rem;
   border-bottom: 1px solid #d7d7d7;
 }
 nav ul{
@@ -392,7 +413,7 @@ nav ul{
    order:3;
  }
  .hero{
-  margin-top: 5rem;
+  margin-top: 6rem;
  }
  div .wide img{
   width:100%;
@@ -423,11 +444,16 @@ div .square img{
  }
  footer{
    display:flex;
+   flex-direction:row;
    justify-content:space-between;
+ }
+ footer i{
+   width:1.75rem;
  }
  .companyInfo{
    display:block;
    text-align:left;
+   font-family:"Raleway Display Web";
    line-height:2;
  }
 .socialMedia li{
