@@ -94,17 +94,16 @@ html {
 body{
   min-width: 26rem;
 }
+/*FIXED NAV BAR*/
 .navWrap{
   display:flex;
   flex-wrap:wrap;
-  box-sizing: border-box;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 9999;
   width: 100%;
-  height: 8.5rem;
+  height: 7.5rem;
   background-color:white;
 }
 .alohologo{
@@ -117,7 +116,7 @@ body{
   width:3.7rem;
   align-self:flex-start;
   padding-top:1rem;
-  box-sizing: border-box;
+  padding-bottom:.5rem;
   cursor: pointer;
   }
 nav{  
@@ -125,22 +124,13 @@ nav{
 }
 nav ul{
   border-top:1px solid #d7d7d7;
-  padding:.3rem 0;
   text-align:center;
-  justify-content:center;
-  align-content:center;
-  box-sizing: border-box;
 }
 nav li{
   display:inline-flex;
   font-family:'Raleway Display Web';
-  line-height: 1rem;
-  justify-content: center;
   padding:.75rem;
-  box-sizing: border-box;
   text-transform: uppercase;
-  list-style: none;
-  text-align: center;
 }
 nav a{
   text-decoration:none;
@@ -153,18 +143,16 @@ nav a{
 a {
    color: #e2574c;
 }
+a:hover {
+   color: #b64036;
+}
 .socialMedia a{
   color:white;
   text-decoration: none;
 }
-
-a:hover {
-   color: #b64036;
-}
 h2{
   font-family:'Playfair Display Web';
   font-style:italic;
-  font-weight:normal;
   font-size:2.3rem;
   padding:5px;
   text-align: center;
@@ -172,7 +160,6 @@ h2{
 h3{
   color:#e2574c;
   font-family:'Playfair Display Web';
-  font-weight:normal;
   font-size:1.5rem;
 }
 h4{
@@ -180,7 +167,6 @@ h4{
 }
 .aboveSeason{
     font-family:'Playfair Display Web';
-    font-weight: normal;
     margin:0 auto;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
@@ -188,10 +174,8 @@ h4{
 .season h2{
     font-family:'Playfair Display Web';
     font-style:normal;
-    font-weight:normal;
     font-size:2.5rem;
     text-align: center;
-    margin: 0 auto;
     text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
 }
 .hero {
@@ -199,12 +183,9 @@ h4{
   flex-direction:column;
   color: white;
   font-size: 1.25rem;
-  font-weight: lighter;
   justify-content: center;
-  align-items: center;
   font-family:"Playfair Display Web";
-  text-align: center;
-  margin-top: 9rem;
+  margin-top: 7.5rem;
   background: 
   linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
   url(../images/banner-girl.png) no-repeat center 60px,
@@ -219,7 +200,7 @@ h4{
 }
 .handcraft {
   color: #2d2d2d;
-  font-family: 'Raleway Display Web', italic;
+  font-family: 'Raleway Display Web';
   line-height: 2rem;
   text-align:center;
   padding:2em;
@@ -231,7 +212,6 @@ h4{
 }
 .wrapper.mens:hover, .wrapper.trends:hover, .wrapper.glasses:hover, .wrapper.sale:hover, .wrapper.bags:hover, .wrapper.womens:hover{
     background-image:none;
-    /*opacity:.8;*/
   }
 
 .wide img{
@@ -266,8 +246,7 @@ transition: all 0.45s;
 .categoryText{
   position:absolute;
   font-family:'Raleway Display Web';
-   text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
-  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
   font-size:1.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -298,7 +277,7 @@ transition: all 0.45s;
   margin-bottom:1rem;
 }
 .updatesContainer{
-  width:600px;
+  width:500px;
   text-align:center;
 }
 .updates {
@@ -310,13 +289,12 @@ transition: all 0.45s;
   text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
   text-align: center;
   height:20rem;
-  line-height:2em;
+  line-height:2;
   margin: 0 auto;
   color:white;
   background:linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
   url(../images/wave-bkgd.jpg) no-repeat center bottom;
   background-size: cover;
-  padding: 50px;
 }
 .sign-up-form{
   display:block;
@@ -326,24 +304,24 @@ transition: all 0.45s;
 }
 input[type="email"]{
   padding: 1.15rem 1rem;
-  width:490px;
+  width:410px;
   border-radius: 3rem;
   position:relative;
 }
-
 input[type="submit"]{
-background-color:#e2574c;
-color: white;
-position:absolute;
-padding-bottom: 1.3rem;
-border:solid;
-border-radius: 3rem;
-box-shadow:none !important;
-right: -.4rem;
-top: .2rem;
-width: 100px;
+  background-color:#e2574c;
+  color: white;
+  position:absolute;
+  padding-bottom: 1.3rem;
+  border:solid;
+  border-radius: 3rem;
+  right: -.4rem;
+  top: .2rem;
+  width: 100px;
 }
-
+input[type="submit"]:hover{
+  background-color: #b64036;
+}
 input{
   padding: 10px 15px;
   border-radius: 5px;
@@ -352,9 +330,7 @@ input{
   display:block;
   margin-bottom: 20px;
 }
-
 input:focus {
-  /*box-shadow: 10px 10px 10px;*/
   border-radius:15px;
 }
 footer {
@@ -370,6 +346,7 @@ footer {
 }
 .companyInfo{
   line-height:1.5;
+  font-family:"Raleway Display Web";
 }
 .address{
   color:grey;
@@ -382,11 +359,10 @@ footer {
   margin:0 auto;
   padding:.5rem;
 }
-.socialMedia p{
-  display:none;
+.socialMedia li :hover{
+  color:#b64036;
 }
-
-.hidden{
+.socialMedia p{
   display:none;
 }
 @media all and (min-width:600px){
@@ -424,7 +400,6 @@ div .square img{
   height:100%;
 }
 .wide{   
-  box-sizing: border-box;
   border:4px solid white;
   width: 50%;
   flex: 2 0 50%;
@@ -433,7 +408,6 @@ div .square img{
   width:50%;
   flex: 1 0 25%;
   border:4px solid white;
-  box-sizing: border-box;
 }
 .carousel li{
   width:50%;
@@ -463,12 +437,8 @@ div .square img{
 .socialMedia{
   text-align:left;
 }
-i .fa{
-  width:1.8rem;
-}
-
  .socialMedia p{
-   display: unset;
+   display: inline-block;
  }
 }
 footer a{
