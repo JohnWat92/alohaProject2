@@ -350,6 +350,8 @@ footer {
 }
 .address{
   color:grey;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
 }
 .socialMedia li{
   list-style:none;
@@ -364,6 +366,9 @@ footer {
 }
 .socialMedia p{
   display:none;
+}
+.companyName{
+  padding-bottom:.5rem;
 }
 @media all and (min-width:600px){
   html{
