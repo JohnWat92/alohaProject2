@@ -1,3 +1,4 @@
+![Aloha Apparel](./images/aloha-apparel.png)
 **Technologies Used:**
 * HTML
 * CSS
