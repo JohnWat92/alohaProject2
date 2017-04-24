@@ -362,7 +362,7 @@ footer a{
   margin:0 auto;
   padding:.5rem;
 }
-.socialMedia li :hover{
+.socialMedia li:hover{
   color:#b64036;
 }
 .socialMedia p{
