@@ -274,6 +274,7 @@ h4{
   margin-bottom:1rem;
 }
 .updatesContainer{
+  /*width:500px;*/
   width:300px;
   text-align:center;
 }
@@ -295,25 +296,27 @@ h4{
 }
 .sign-up-form{
   display:block;
-  margin: 1rem auto 0 ;
+  /*margin: 1rem auto 0 ;*/
+  margin: 0 auto;
   position: relative;
-  width: 80%;
+  /*width: 40%;*/
 }
 input[type="email"]{
   padding: 1.15rem 1rem;
-  width:410px;
+  width: 326px;
   border-radius: 3rem;
-  position:relative;
+  margin-top: 1rem;
+  position: relative;
 }
 input[type="submit"]{
-  background-color:#e2574c;
+  background-color: #e2574c;
   color: white;
-  position:absolute;
+  position: absolute;
   padding-bottom: 1.3rem;
-  border:solid;
+  border: solid;
   border-radius: 3rem;
-  right: -.4rem;
-  top: .2rem;
+  right: -1.7rem;
+  top: .1rem;
   width: 100px;
 }
 input[type="submit"]:hover{
@@ -443,6 +446,25 @@ footer a{
   }
   .socialMedia p{
     display: inline-block;
+  }
+  input[type="email"]{
+    width: 410px;
+  }
+  .updatesContainer{
+    width:500px;
+  }
+  input[type="submit"]{
+    padding-bottom: 1.3rem;
+    right: -7px;
+    top: 3px;
+    width: 100px;
+  }
+  .sign-up-form{
+    display:block;
+    /*margin: 1rem auto 0 ;*/
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
   }
 }
 
