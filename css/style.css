@@ -115,12 +115,12 @@ body{
 .counter{
   position:absolute;
   background: red;
-  width: 20px;
-  height:20px;
+  width: 18px;
+  height:18px;
   display:flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 9px;
   top: 15px;
   right: 0px;
   font-size: 16px;
@@ -492,9 +492,11 @@ footer a{
   .updates{
     padding: 30px 325px;
   }
-  /*.categoryText{
-    font-size: 2rem
-  }*/
+  .counter{
+    height:20px;
+    width:20px;
+    border-radius: 10px;
+  }
   .wrapper.mens, .wrapper.trends, .wrapper.glasses, .wrapper.sale, .wrapper.bags, .wrapper.womens{
     font-size:2rem;
   }

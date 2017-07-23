@@ -14,7 +14,11 @@ $(function () {
 	});
 
 	var count = 0;
+	if(count === 0){
+		document.getElementsByClassName('counter')[0].style.visibility = 'hidden';
+	}
 	$('.purchase').on('click', function () {
+		document.getElementsByClassName('counter')[0].style.visibility = 'visible';
 		count++;
 		document.getElementsByClassName('counter')[0].innerHTML = count
 	})
