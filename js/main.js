@@ -13,6 +13,12 @@ $(function () {
 		}
 	});
 
+	var count = 0;
+	$('.purchase').on('click', function () {
+		count++;
+		document.getElementsByClassName('counter')[0].innerHTML = count
+	})
+
 	$('#email').on('focus', function () {
 		$('#email').val('');
 	})

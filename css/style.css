@@ -108,8 +108,22 @@ body{
   width:3.7rem;
   align-self:flex-start;
   padding-top:1rem;
+  position:relative;
   padding-bottom:.5rem;
   cursor: pointer;
+}
+.counter{
+  position:absolute;
+  background: red;
+  width: 20px;
+  height:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  top: 15px;
+  right: 0px;
+  font-size: 16px;
 }
 nav{
   width:100%;
