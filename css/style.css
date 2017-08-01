@@ -212,6 +212,7 @@ h4{
   text-align:center;
   padding:1.5rem;
 }
+
 .productCategories{
   display:flex;
   flex-flow:row wrap;
@@ -252,19 +253,13 @@ h4{
   transition: all 1s ease-in;
 }
 .categoryText{
-  position:absolute;
   font-family:'Raleway Display Web';
   text-shadow: 2px 2px 4px rgba(100,100,100,0.8);
-  /*font-size:1.5rem;*/
   font-weight: bold;
   text-transform: uppercase;
   color: white;
   z-index:1;
-  /*transition: all 1s ease-in;*/
 }
-/*.categoryText:hover{
-  font-size: 2rem;
-}*/
 .products{
   text-align: center;
   padding: 4rem 0rem;
@@ -310,10 +305,8 @@ h4{
 }
 .sign-up-form{
   display:block;
-  /*margin: 1rem auto 0 ;*/
   margin: 0 auto;
   position: relative;
-  /*width: 40%;*/
 }
 input[type="email"]{
   padding: 1.15rem 1rem;
@@ -503,4 +496,7 @@ footer a{
   .wrapper.mens:hover, .wrapper.trends:hover, .wrapper.glasses:hover, .wrapper.sale:hover, .wrapper.bags:hover, .wrapper.womens:hover{
     font-size:2.5rem;
   }
+}
+.categoryTextContainer{
+  position:absolute;
 }
