@@ -152,7 +152,7 @@ a {
 a:hover {
   color: #b64036;
 }
-/*END OF NAV BAR EDIT */
+/*END OF NAV BAR */
 .socialMedia a{
   color:white;
   text-decoration: none;
@@ -212,7 +212,7 @@ h4{
   text-align:center;
   padding:1.5rem;
 }
-
+/*BEGINNING OF FLEX BOX CATEGORIES*/
 .productCategories{
   display:flex;
   flex-flow:row wrap;
@@ -265,6 +265,7 @@ h4{
   padding: 4rem 0rem;
   margin:0 auto;
 }
+/*USE OF FLICKITY PLUGIN*/
 .carousel{
   list-style:none;
 }
@@ -279,6 +280,7 @@ h4{
   font-weight:bold;
   text-transform: uppercase;
 }
+/*SIGN UP SECTION FOR UPDATES*/
 .updates h2{
   margin-bottom:1rem;
 }
@@ -303,6 +305,7 @@ h4{
   url(../images/wave-bkgd.jpg) no-repeat center bottom;
   background-size: cover;
 }
+/*THE SIGN UP FORM INPUT AND SUBMIT*/
 .sign-up-form{
   display:block;
   margin: 0 auto;
@@ -340,6 +343,7 @@ input{
 input:focus {
   border-radius:15px;
 }
+/*BEGINNING OF FOOTER*/
 footer{
   background-color: #242424;
   text-align: center;
