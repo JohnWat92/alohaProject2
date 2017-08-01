@@ -223,6 +223,9 @@ h4{
   text-shadow: 1px 0px 20px yellow;
   font-size:2rem;
 }
+.categoryTextContainer{
+  position:absolute;
+}
 .wide img{
   width:100%;
   height:100%;
@@ -428,9 +431,6 @@ footer a{
     flex: 1 0 25%;
     border:4px solid white;
   }
-  /*.categoryText:hover{
-    font-size: 2.5rem;
-  }*/
   .carousel li{
     width:50%;
     line-height: 1.5;
@@ -472,7 +472,6 @@ footer a{
   }
   .sign-up-form{
     display:block;
-    /*margin: 1rem auto 0 ;*/
     margin: 0 auto;
     position: relative;
     width: 80%;
@@ -500,7 +499,4 @@ footer a{
   .wrapper.mens:hover, .wrapper.trends:hover, .wrapper.glasses:hover, .wrapper.sale:hover, .wrapper.bags:hover, .wrapper.womens:hover{
     font-size:2.5rem;
   }
-}
-.categoryTextContainer{
-  position:absolute;
 }
